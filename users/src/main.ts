@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (_req, res) => {
-  res.status(200).send('Hello world');
+  res.status(200).send('Hello Express Users!');
 });
 
 const PORT=process.env.PORT || 3000
