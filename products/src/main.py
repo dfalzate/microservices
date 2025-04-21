@@ -1,7 +1,10 @@
+from typing import Union
+
 from fastapi import FastAPI
 
-app = FastAPI(root_path="/api/v1")
+app = FastAPI()
 
-@app.get('/')
-async def health_check():
-    return {'status': 'ok'}
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
